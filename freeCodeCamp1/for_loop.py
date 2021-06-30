@@ -21,3 +21,13 @@ for index in range(5):
     print("First iteration")
   else:
     print("not first")
+
+#in python, the syntax for power is (2**3)
+
+def raise_to_power(base, expo):
+  total = base
+  for index in range(expo-1):
+    total = total * base
+  return total
+
+print(raise_to_power(2,3))
